@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name = "Pet")
+@Table(name = "pet")
 @Data
 public class Pet {
 
@@ -15,4 +15,8 @@ public class Pet {
     private String nome;
 
     private String raca;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
 }
