@@ -1,4 +1,4 @@
-package com.petstay.hotelcanino.Service;
+package com.petstay.hotelcanino.dto;
 
 public record PetDTO(
         String nome,

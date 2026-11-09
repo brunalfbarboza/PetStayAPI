@@ -24,6 +24,9 @@ public class Usuario {
     @OneToMany(mappedBy = "usuario",cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Pet> pets = new ArrayList<>();
 
+    @OneToMany(mappedBy = "usuario",cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Agendamento> agendamentos = new ArrayList<>();
+
     public void addPet(Pet pet){
         pets.add(pet);
         pet.setUsuario(this);

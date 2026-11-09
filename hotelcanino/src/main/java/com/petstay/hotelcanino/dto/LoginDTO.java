@@ -1,4 +1,4 @@
-package com.petstay.hotelcanino;
+package com.petstay.hotelcanino.dto;
 
 public record LoginDTO(
         String email,

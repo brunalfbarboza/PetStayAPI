@@ -1,10 +1,9 @@
 package com.petstay.hotelcanino.Controller;
 
-import com.petstay.hotelcanino.LoginDTO;
+import com.petstay.hotelcanino.dto.LoginDTO;
 import com.petstay.hotelcanino.Model.Usuario;
 import com.petstay.hotelcanino.Repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
